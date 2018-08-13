@@ -4,12 +4,12 @@ import Toy_Robot_Simulation.model.Position;
 import Toy_Robot_Simulation.model.Robot;
 import Toy_Robot_Simulation.model.ToyBoard;
 
-public class Game {
+public class Simulation {
 
     ToyBoard toyBoard;
     Robot robot;
 
-    public Game(ToyBoard toyBoard, Robot robot) {
+    public Simulation(ToyBoard toyBoard, Robot robot) {
         this.toyBoard = toyBoard;
         this.robot = robot;
     }
@@ -29,7 +29,7 @@ public class Game {
         if(robot.getPosition == null)
             return null;
 
-        return robot.getPosition().get
+        return robot.getPosition();
     }
 
     public String evaluateMove(String input){

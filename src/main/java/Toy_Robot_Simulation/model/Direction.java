@@ -9,14 +9,14 @@ public enum Direction {
     private static Map<Integer, Direction> map = new HashMap<Integer, Direction>();
 
     static {
-        for (Direction directionEnum : Direction.values()) {
-            map.put(directionEnum.directionIndex, directionEnum);
+        for (Direction directionPosition : Direction.values()) {
+            map.put(directionPosition.directionIndex, directionPosition);
         }
     }
 
     private int directionIndex;
 
-     Direction(int direction) {
+    Direction(int direction) {
         this.directionIndex = direction;
     }
 
@@ -26,15 +26,15 @@ public enum Direction {
 
 
     public Direction leftDirection() {
-        return rotate(-1);
+        return changePosition(-1);
     }
 
 
     public Direction rightDirection() {
-        return rotate(1);
+        return changePosition(1);
     }
 
-    private Direction rotate(int place) {
+    private Direction changePosition(int place) {
 
         int newIndex = (this.directionIndex + place) < 0 ?
                 map.size() - 1 :

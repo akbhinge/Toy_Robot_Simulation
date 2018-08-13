@@ -11,7 +11,7 @@ public class Main {
 
         ToyBoard board = new ToyBoard(5, 5);
         Robot robot = new Robot();
-        Game new_Game = new Game(board, robot);
+        Simulation new_Simulation = new Simulation(board, robot);
 
         Scanner in = new Scanner(System.in);
 
@@ -33,7 +33,7 @@ public class Main {
             else{
                 try{
 
-                    String outputStr = new_Game.evaluateMove(getInput);
+                    String outputStr = new_Simulation.evaluateMove(getInput);
                     System.out.println(outputStr);
 
 
@@ -43,7 +43,7 @@ public class Main {
             }
 
         }
-        System.out.println(new_Game);
+        System.out.println(new_Simulation);
 
 
     }

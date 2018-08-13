@@ -41,7 +41,6 @@ public class Position {
 
     }
 
-
     public Position getRobotPosition() throws Exception{
 
         if(this.direction == null){
