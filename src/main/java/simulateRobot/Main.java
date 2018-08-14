@@ -18,8 +18,10 @@ public class Main {
         System.out.println("Toy Robot Simulator: ");
         System.out.println("Please enter a valid command: ");
         System.out.println("Valid Commands: ");
-
-        System.out.println("\'PLACE X,Y,NORTH|SOUTH|EAST|WEST\', MOVE, LEFT, RIGHT, REPORT or EXIT");
+        System.out.println("FORMAT: PLACE X,Y,Direction");
+        System.out.println(" (X, Y: Co-ordinates, Direction: NORTH,SOUTH,EAST,WEST)");
+        System.out.println();
+        System.out.println("After a valid PLACE command, other available commands: MOVE, LEFT, REPORT, REPORT, EXIT");
 
         boolean moveRobot = true;
 
@@ -31,7 +33,7 @@ public class Main {
                 moveRobot = false;
             }
             else{
-                try{2
+                try{
 
                     String outputStr = new_Simulation.evaluateMove(getInput);
                     System.out.println(outputStr);

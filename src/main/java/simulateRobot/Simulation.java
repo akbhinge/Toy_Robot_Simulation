@@ -4,90 +4,88 @@ import simulateRobot.model.*;
 
 public class Simulation {
 
-    ToyBoard toyBoard;
-    Robot robot;
+    private ToyBoard squareBoard;
+    private Robot robot;
 
-    public Simulation(ToyBoard toyBoard, Robot robot) {
-        this.toyBoard = toyBoard;
+    public Simulation(ToyBoard squareBoard, Robot robot) {
+        this.squareBoard = squareBoard;
         this.robot = robot;
     }
 
-    public boolean placeRobot(Position position) throws Exception{
-        if(toyBoard == null){
-            throw new Exception("Invalid ToyBoard");
-        }
+    /**
+     * Places the robot on the squareBoard  in position X,Y and facing NORTH, SOUTH, EAST or WEST
+     *
+     * @param position Robot position
+     * @return true if placed successfully
+     * @throws Exception
+     */
+    public boolean placeToyRobot(Position position) throws Exception {
 
-        if(position == null){
-            throw new Exception("Invalid position");
-        }
+        if (squareBoard == null)
+            throw new Exception("Invalid squareBoard object");
 
-        if(position.getDirection() == null){
-            throw new Exception("Cannot move in this direction");
-        }
+        if (position == null)
+            throw new Exception("Invalid position object");
 
-        if(toyBoard.checkValidPosition(position)){
-            return true;
-        }
+        if (position.getDirection() == null)
+            throw new Exception("Invalid direction value");
 
+        // validate the position
+        if (!squareBoard.checkValidPosition(position))
+            return false;
+
+        // if position is valid then assign values to fields
         robot.setPosition(position);
-
         return true;
     }
 
     /**
+     * Ecvaluate a command
      *
-     * @param input -
-     * @return -
-     * @throws Exception -
+     * @param inputString - string containing input command
+     * @return string after executing the command
+     * @throws Exception - if invalid command provided
+     *
      */
+    public String evaluateMove(String inputString) throws Exception {
+        String[] args = inputString.split(" ");
 
-    public String evaluateMove(String input) throws Exception{
-
-        String[] inputCommands = input.split(" ");
-
-        Commands issueCommand;
-
-        try{
-            issueCommand = Commands.valueOf(inputCommands[0]);
+        // validate command
+        Commands command;
+        try {
+            command = Commands.valueOf(args[0]);
+        } catch (IllegalArgumentException e) {
+            throw new Exception("Invalid command");
         }
-        catch (IllegalArgumentException exp){
-            throw new Exception("Invalid Command, cannot move Robot!");
-        }
-
-        if(issueCommand == Commands.PLACE && inputCommands.length < 2){
-            throw new Exception("Invalid Command");
+        if (command == Commands.PLACE && args.length < 2) {
+            throw new Exception("Invalid command");
         }
 
-        String[] validateMoves;
-
-        int x=0, y=0;
-
-        Direction assignDirection = null;
-
-        if(issueCommand == Commands.PLACE){
-            validateMoves = inputCommands[1].split(",");
-            try{
-                x = Integer.parseInt(validateMoves[0]);
-                y = Integer.parseInt(validateMoves[1]);
-                assignDirection = Direction.valueOf(validateMoves[2]);
-                if(x > 5 || y > 5){
-                    throw new Exception();
-                }
-            }
-            catch(Exception exp){
-                throw new Exception("Invalid Co-ordinates, command cannot be executed!");
+        // validate PLA CE params
+        String[] params;
+        int x = 0;
+        int y = 0;
+        Direction commandDirection = null;
+        if (command == Commands.PLACE) {
+            params = args[1].split(",");
+            try {
+                x = Integer.parseInt(params[0]);
+                y = Integer.parseInt(params[1]);
+                commandDirection = Direction.valueOf(params[2]);
+            } catch (Exception e) {
+                throw new Exception("Invalid command");
             }
         }
 
         String output;
 
-        switch (issueCommand) {
+        switch (command) {
             case PLACE:
-                output = String.valueOf(placeRobot(new Position(x, y, assignDirection)));
+                output = String.valueOf(placeToyRobot(new Position(x, y, commandDirection)));
                 break;
             case MOVE:
-                Position newPosition = robot.getPosition().getRobotPosition();
-                if (!toyBoard.checkValidPosition(newPosition))
+                Position newPosition = robot.getPosition().getNextPosition();
+                if (!squareBoard.checkValidPosition(newPosition))
                     output = String.valueOf(false);
                 else
                     output = String.valueOf(robot.move(newPosition));
@@ -99,7 +97,7 @@ public class Simulation {
                 output = String.valueOf(robot.rotateRight());
                 break;
             case REPORT:
-                output = displayReport();
+                output = report();
                 break;
             default:
                 throw new Exception("Invalid command");
@@ -108,14 +106,14 @@ public class Simulation {
         return output;
     }
 
-    public String displayReport(){
-
-        if(robot.getPosition() == null)
+    /**
+     * Returns the X,Y and Direction of the robot
+     */
+    private String report() {
+        if (robot.getPosition() == null)
             return null;
 
-        return robot.getPosition().getXPosition() + ','
-                + robot.getPosition().getYPosition() + ','
-                + robot.getPosition().getDirection().toString();
+        return "OUTPUT: " + robot.getPosition().getXCoordinate() + "," + robot.getPosition().getYCoordinate() + "," + robot.getPosition().getDirection().toString();
     }
 
 }

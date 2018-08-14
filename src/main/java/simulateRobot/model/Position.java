@@ -3,28 +3,37 @@ package simulateRobot.model;
 public class Position {
 
     private int x, y;
+
     Direction direction;
 
+    /**
+     *
+     * @param position - get co-ordiates and direction of the robot
+     */
 
-    public Position(Position position) {
-        this.x = position.getXPosition();
-        this.y = position.getYPosition();
+    private Position(Position position) {
+        this.x = position.getXCoordinate();
+        this.y = position.getYCoordinate();
         this.direction = position.getDirection();
-
     }
 
-
-    public Position(int x, int y, Direction direction){
+    /**
+     *
+     * @param x - set x co-ordinate
+     * @param y - set y co-ordinate
+     * @param direction - set robot direction
+     */
+    public Position(int x, int y, Direction direction) {
         this.x = x;
         this.y = y;
         this.direction = direction;
     }
 
-    public int getXPosition(){
+    public int getXCoordinate() {
         return this.x;
     }
 
-    public int getYPosition() {
+    public int getYCoordinate() {
         return this.y;
     }
 
@@ -36,36 +45,38 @@ public class Position {
         this.direction = direction;
     }
 
-    public void moveRobot(int x, int y){
-        this.x = this.x + x;
-        this.y = this.y + y;
-
+    private void moveRobot(int x, int y) {
+        this.x += x;
+        this.y += y;
     }
 
-    public Position getRobotPosition() throws Exception{
 
-        if(this.direction == null){
+    /**
+     *
+     * @return  - position of robot after moving in a particular direction
+     * @throws Exception - if invalid position
+     */
+    public Position getNextPosition() throws Exception {
+        if (this.direction == null)
             throw new Exception("Invalid robot direction");
-        }
 
+        // new position to validate
         Position newPosition = new Position(this);
-
-        switch (this.direction){
-
+        switch (this.direction) {
             case NORTH:
-                newPosition.moveRobot(0,1);
-                break;
-            case EAST:
-                newPosition.moveRobot(1,0);
-                break;
-            case WEST:
-                newPosition.moveRobot(-1,0);
+                newPosition.moveRobot(0, 1);
                 break;
             case SOUTH:
-                newPosition.moveRobot(0,-1);
+                newPosition.moveRobot(0, -1);
+                break;
+            case EAST:
+                newPosition.moveRobot(1, 0);
+                break;
+
+            case WEST:
+                newPosition.moveRobot(-1, 0);
                 break;
         }
-
         return newPosition;
     }
 

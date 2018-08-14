@@ -2,19 +2,30 @@ package simulateRobot.model;
 
 public class ToyBoard implements Board {
 
-    private int rows, columns;
+    private int rows;
+    private int columns;
 
-    public ToyBoard(int rows,int columns){
+    /**
+     *
+     * @param rows - total rows for the toyboard
+     * @param columns - total columns for the board
+     */
+    public ToyBoard(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
     }
 
-    @Override
-    public boolean checkValidPosition(Position position){
-
-        return (
-                position.getXPosition() < this.columns || position.getXPosition() > 0 ||
-                        position.getYPosition() < this.rows || position.getYPosition() > 0
+    /**
+     *
+     * @param position - current position on the board
+     * @return - true/false depending on robot position
+     */
+    public boolean checkValidPosition(Position position) {
+        return !(
+                position.getXCoordinate() > this.columns || position.getXCoordinate() < 0 ||
+                        position.getYCoordinate() > this.rows || position.getYCoordinate() < 0
         );
+
+
     }
 }

@@ -9,8 +9,8 @@ public enum Direction {
     private static Map<Integer, Direction> map = new HashMap<Integer, Direction>();
 
     static {
-        for (Direction directionPosition : Direction.values()) {
-            map.put(directionPosition.directionIndex, directionPosition );
+        for (Direction directionEnum : Direction.values()) {
+            map.put(directionEnum.directionIndex, directionEnum);
         }
     }
 
@@ -20,28 +20,36 @@ public enum Direction {
         this.directionIndex = direction;
     }
 
-    public static Direction valueOf(int directionNum) {
+    public static Direction location(int directionNum) {
         return map.get(directionNum);
     }
 
-
+    /**
+     * Returns the direction on the left of the current one
+     */
     public Direction leftDirection() {
-        return changePosition(-1);
+        return rotateRobot(-1);
     }
 
-
+    /**
+     * Returns the direction on the right of the current one
+     */
     public Direction rightDirection() {
-        return changePosition(1);
+        return rotateRobot(1);
     }
 
-    private Direction changePosition(int place) {
+    /**
+     *
+     * @param places - specify move places
+     * @return - direction of movement
+     */
+    private Direction rotateRobot(int places) {
 
-        int newIndex = (this.directionIndex + place) < 0 ?
+        int newIndex = (this.directionIndex + places) < 0 ?
                 map.size() - 1 :
-                (this.directionIndex + place) % map.size();
+                (this.directionIndex + places) % map.size();
 
-        return Direction.valueOf(newIndex);
+        return Direction.location(newIndex);
     }
-
 }
 

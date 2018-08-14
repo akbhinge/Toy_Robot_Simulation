@@ -4,13 +4,10 @@ public class Robot {
 
     private Position position;
 
-    public Robot(){
-
+    public Robot() {
     }
 
-    public Robot(Position position) {
-        this.position = position;
-    }
+
 
     public boolean setPosition(Position position) {
         if (position == null)
@@ -20,12 +17,9 @@ public class Robot {
         return true;
     }
 
-    public boolean move() throws Exception {
-        return move(position.getRobotPosition());
-    }
 
     /**
-     * Moves the robot one unit forward in the direction it is currently facing
+     * Moves the robot forward in current direction
      *
      * @return true if moved successfully
      */
@@ -43,7 +37,7 @@ public class Robot {
     }
 
     /**
-     * Rotates the robot 90 degrees LEFT
+     * Rotates the robot LEFT
      *
      * @return true if rotated successfully
      */
@@ -56,7 +50,7 @@ public class Robot {
     }
 
     /**
-     * Rotates the robot 90 degrees RIGHT
+     * Rotates the robot RIGHT
      *
      * @return true if rotated successfully
      */
