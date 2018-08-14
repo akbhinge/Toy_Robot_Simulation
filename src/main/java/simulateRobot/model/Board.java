@@ -1,4 +1,4 @@
-package Toy_Robot_Simulation.model;
+package simulateRobot.model;
 
 public interface Board {
 

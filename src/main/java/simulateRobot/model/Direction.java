@@ -1,4 +1,4 @@
-package Toy_Robot_Simulation.model;
+package simulateRobot.model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ public enum Direction {
 
     static {
         for (Direction directionPosition : Direction.values()) {
-            map.put(directionPosition.directionIndex, directionPosition);
+            map.put(directionPosition.directionIndex, directionPosition );
         }
     }
 

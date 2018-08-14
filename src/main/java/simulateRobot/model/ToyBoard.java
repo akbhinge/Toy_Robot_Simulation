@@ -1,4 +1,4 @@
-package Toy_Robot_Simulation.model;
+package simulateRobot.model;
 
 public class ToyBoard implements Board {
 
@@ -9,6 +9,7 @@ public class ToyBoard implements Board {
         this.columns = columns;
     }
 
+    @Override
     public boolean checkValidPosition(Position position){
 
         return (

@@ -1,7 +1,7 @@
-package Toy_Robot_Simulation;
+package simulateRobot;
 
-import Toy_Robot_Simulation.model.Robot;
-import Toy_Robot_Simulation.model.ToyBoard;
+import simulateRobot.model.Robot;
+import simulateRobot.model.ToyBoard;
 
 import java.util.Scanner;
 
@@ -25,13 +25,13 @@ public class Main {
 
         while(moveRobot){
 
-            String getInput = in.next();
+            String getInput = in.nextLine();
 
             if(getInput.equalsIgnoreCase("EXIT")){
                 moveRobot = false;
             }
             else{
-                try{
+                try{2
 
                     String outputStr = new_Simulation.evaluateMove(getInput);
                     System.out.println(outputStr);
@@ -43,8 +43,5 @@ public class Main {
             }
 
         }
-        System.out.println(new_Simulation);
-
-
     }
 }

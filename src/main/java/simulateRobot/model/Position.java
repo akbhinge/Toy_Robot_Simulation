@@ -1,15 +1,16 @@
-package Toy_Robot_Simulation.model;
+package simulateRobot.model;
 
 public class Position {
 
     private int x, y;
-    private Direction direction;
+    Direction direction;
 
 
-    public Position(Position position){
+    public Position(Position position) {
         this.x = position.getXPosition();
         this.y = position.getYPosition();
         this.direction = position.getDirection();
+
     }
 
 
@@ -28,7 +29,7 @@ public class Position {
     }
 
     public Direction getDirection() {
-        return direction;
+        return this.direction;
     }
 
     public void setDirection(Direction direction) {
@@ -36,8 +37,8 @@ public class Position {
     }
 
     public void moveRobot(int x, int y){
-        this.x += x;
-        this.y += y;
+        this.x = this.x + x;
+        this.y = this.y + y;
 
     }
 
@@ -48,7 +49,6 @@ public class Position {
         }
 
         Position newPosition = new Position(this);
-
 
         switch (this.direction){
 
