@@ -15,14 +15,14 @@ public class Main {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Toy Robot Simulator: ");
-        System.out.println("Please enter a valid command: ");
-        System.out.println("Valid Commands: ");
-        System.out.println("FORMAT: PLACE X,Y,Direction");
-        System.out.println(" (X, Y: Co-ordinates, Direction: NORTH,SOUTH,EAST,WEST)");
         System.out.println();
+        System.out.println("Toy Robot Simulator ");
+        System.out.println();
+        System.out.println("(FORMAT: PLACE X,Y,Direction)");
+        System.out.println("(X, Y: Co-ordinates, Direction: NORTH,SOUTH,EAST,WEST)");
         System.out.println("After a valid PLACE command, other available commands: MOVE, LEFT, REPORT, REPORT, EXIT");
-
+        System.out.println();
+        System.out.println("Enter Command: ");
         boolean moveRobot = true;
 
         while(moveRobot){
@@ -39,8 +39,8 @@ public class Main {
                     System.out.println(outputStr);
 
 
-                }catch (Exception exp){
-                    System.out.println(exp.getMessage());
+                }catch (Exception robotException){
+                    System.out.println(robotException.getMessage());
                 }
             }
 

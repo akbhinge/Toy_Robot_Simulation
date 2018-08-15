@@ -17,7 +17,6 @@ public class Simulation {
      *
      * @param position Robot position
      * @return true if placed successfully
-     * @throws Exception
      */
     public boolean placeToyRobot(Position position) throws Exception {
 
