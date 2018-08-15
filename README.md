@@ -22,7 +22,7 @@ NOTE:
 * [Java](https://docs.oracle.com/en/java//) - Programming language
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [TESTNG](http://testng.org/doc/documentation-main.html) - Used to write test cases
-* [INTELLiJ] (https://www.jetbrains.com/idea/) - IDE used to write and execute the program
+* [IntelliJ](https://jetbrains.com/idea/) - IDE used to write and execute the program
 
 
 ## By
