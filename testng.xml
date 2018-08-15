@@ -2,9 +2,10 @@
     <test name="Simulation_Test_Suite">
         <classes>
 
-            <class name="simulation_Tests.testSimulation" />
-            <class name="simulation_Tests.testDirections" />
-            <class name="simulation_Tests.testPosition" />
+            <class name="ToyRobot_Test_Suite.testSimulation" />
+            <class name="ToyRobot_Test_Suite.testDirections" />
+            <class name="ToyRobot_Test_Suite.testPosition" />
+            <class name="ToyRobot_Test_Suite.testRobot" />
 
         </classes>
     </test>

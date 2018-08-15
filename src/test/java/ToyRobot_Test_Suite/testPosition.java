@@ -1,4 +1,4 @@
-package simulation_Tests;
+package ToyRobot_Test_Suite;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,6 +6,10 @@ import simulateRobot.model.Direction;
 import simulateRobot.model.Position;
 
 public class testPosition {
+
+    /**
+     *   Test cases to check if robot can move to the next position
+     */
 
     @Test
     public void testGetNextPosition() throws Exception{

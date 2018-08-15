@@ -7,7 +7,7 @@ public class ToyBoard implements Board {
 
     /**
      *
-     * @param rows - total rows for the toyboard
+     * @param rows - total rows for the board
      * @param columns - total columns for the board
      */
     public ToyBoard(int rows, int columns) {

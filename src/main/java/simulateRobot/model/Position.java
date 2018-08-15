@@ -60,7 +60,7 @@ public class Position {
         if (this.direction == null)
             throw new Exception("Invalid robot direction");
 
-        // new position to validate
+        // validate new position after movement
         Position newPosition = new Position(this);
         switch (this.direction) {
             case NORTH:

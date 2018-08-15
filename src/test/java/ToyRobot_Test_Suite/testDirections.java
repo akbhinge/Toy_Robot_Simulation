@@ -1,4 +1,4 @@
-package simulation_Tests;
+package ToyRobot_Test_Suite;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,8 +6,12 @@ import simulateRobot.model.Direction;
 
 public class testDirections {
 
+    /**
+     *  Test cases to check if the robot moves in valid direction
+     */
+
     @Test
-    public void testRobotDirection() throws Exception{
+    public void testRobotDirection(){
 
         Direction direction = Direction.NORTH;
 

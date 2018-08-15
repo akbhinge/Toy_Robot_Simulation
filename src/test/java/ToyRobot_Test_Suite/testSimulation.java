@@ -1,4 +1,4 @@
-package simulation_Tests;
+package ToyRobot_Test_Suite;
 
 
 import org.testng.Assert;
@@ -11,10 +11,11 @@ import simulateRobot.model.ToyBoard;
 
 public class testSimulation {
 
-
     private final int ROWS = 5, COLUMNS = 5;
 
-
+    /**
+     *    Test cases to check if robot can be placed on the board
+     */
     @Test
     public void testBoardPlacement() throws Exception{
         ToyBoard board = new ToyBoard(ROWS,COLUMNS);
@@ -28,6 +29,10 @@ public class testSimulation {
         Assert.assertFalse(moves.placeToyRobot(new Position(10,10,Direction.WEST)));
         Assert.assertFalse(moves.placeToyRobot(new Position(-2,-2,Direction.SOUTH)));
     }
+
+    /**
+     *  Test cases to simulate Robot movements and make sure robot doesnt fall of the board
+     */
 
     @Test(expectedExceptions = Exception.class)
     public void testRobotMoves() throws Exception {

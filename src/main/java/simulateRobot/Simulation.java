@@ -41,8 +41,8 @@ public class Simulation {
     /**
      * Ecvaluate a command
      *
-     * @param inputString - string containing input command
-     * @return string after executing the command
+     * @param inputString - string containing input commands
+     * @return string after executing the commands
      * @throws Exception - if invalid command provided
      *
      */
@@ -106,7 +106,7 @@ public class Simulation {
     }
 
     /**
-     * Returns the X,Y and Direction of the robot
+     * Returns the X,Y co-ordinates and Direction of the robot
      */
     private String report() {
         if (robot.getPosition() == null)

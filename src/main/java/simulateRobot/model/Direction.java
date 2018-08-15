@@ -3,14 +3,17 @@ package simulateRobot.model;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *  Set constant direction values
+ */
 public enum Direction {
 
     NORTH(0), EAST(1), SOUTH(2), WEST(3);
     private static Map<Integer, Direction> map = new HashMap<Integer, Direction>();
 
     static {
-        for (Direction directionEnum : Direction.values()) {
-            map.put(directionEnum.directionIndex, directionEnum);
+        for (Direction directionSide : Direction.values()) {
+            map.put(directionSide.directionIndex, directionSide);
         }
     }
 

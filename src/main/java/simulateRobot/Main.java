@@ -7,6 +7,10 @@ import java.util.Scanner;
 
 public class Main {
 
+    /**
+     * Main function to implement all the classes and simulate Toy Robot
+     */
+
     public static void main(String[] args) {
 
         ToyBoard board = new ToyBoard(5, 5);

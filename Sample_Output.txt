@@ -1,0 +1,129 @@
+SAMPLE OUTPUT -
+
+1.
+
+"C:\Program Files\Java\jdk-9.0.4\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\lib\idea_rt.jar=60434:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\bin" -Dfile.encoding=UTF-8 -classpath D:\Programs\ToyRobot\target\classes simulateRobot.Main
+
+Toy Robot Simulator
+
+(FORMAT: PLACE X,Y,Direction)
+(X, Y: Co-ordinates, Direction: NORTH,SOUTH,EAST,WEST)
+After a valid PLACE command, other available commands: MOVE, LEFT, REPORT, REPORT, EXIT
+
+Enter Command:
+PLACE 0,0,NORTH
+true
+MOVE
+true
+REPORT
+OUTPUT: 0,1,NORTH
+PLACE 0,0,NORTH
+true
+LEFT
+true
+REPORT
+OUTPUT: 0,0,WEST
+PLACE 1,1,SOUTH
+true
+MOVE
+true
+REPORT
+OUTPUT: 1,0,SOUTH
+EXIT
+
+Process finished with exit code 0
+
+
+2.
+
+"C:\Program Files\Java\jdk-9.0.4\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\lib\idea_rt.jar=60393:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\bin" -Dfile.encoding=UTF-8 -classpath D:\Programs\ToyRobot\target\classes simulateRobot.Main
+
+Toy Robot Simulator
+
+(FORMAT: PLACE X,Y,Direction)
+(X, Y: Co-ordinates, Direction: NORTH,SOUTH,EAST,WEST)
+After a valid PLACE command, other available commands: MOVE, LEFT, REPORT, REPORT, EXIT
+
+Enter Command:
+PLACE 0,0,NORTH
+true
+MOVE
+true
+RIGHT
+true
+MOVE
+true
+REPORT
+OUTPUT: 1,1,EAST
+MOVE
+true
+LEFT
+true
+MOVE
+true
+MOVE
+true
+REPORT
+OUTPUT: 2,3,NORTH
+MOVE
+true
+MOVE
+true
+REPORT
+OUTPUT: 2,5,NORTH
+MOVE
+false
+REPORT
+OUTPUT: 2,5,NORTH
+EXIT
+
+Process finished with exit code 0
+
+
+2.
+
+"C:\Program Files\Java\jdk-9.0.4\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\lib\idea_rt.jar=60399:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.1\bin" -Dfile.encoding=UTF-8 -classpath D:\Programs\ToyRobot\target\classes simulateRobot.Main
+
+Toy Robot Simulator
+
+(FORMAT: PLACE X,Y,Direction)
+(X, Y: Co-ordinates, Direction: NORTH,SOUTH,EAST,WEST)
+After a valid PLACE command, other available commands: MOVE, LEFT, REPORT, REPORT, EXIT
+
+Enter Command:
+PLACE 0,0,NORTh
+Invalid command
+PLACE 0,0,NORTH
+true
+MOVE
+true
+MOVE
+true
+REPORT
+OUTPUT: 0,2,NORTH
+RIGHT
+true
+REPORT
+OUTPUT: 0,2,EAST
+MOVE
+true
+REPORT
+OUTPUT: 1,2,EAST
+RIGHT
+true
+MOVE
+true
+REPORT
+OUTPUT: 1,1,SOUTH
+PLACE 10,10,EAST
+false
+PLACE -1,3,LEFT
+Invalid command
+PLACE 0,0,WEST
+true
+REPORT
+OUTPUT: 0,0,WEST
+EXIT
+
+Process finished with exit code 0
+

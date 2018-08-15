@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/simulateRobot/Main.java" line="21" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/simulateRobot/Main.java" line="25" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cde7b85-701f-44c3-9adb-6cb206991e46" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/simulation_Tests/testDirections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/simulation_Tests/testPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/simulation_Tests/testSimulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="1cde7b85-701f-44c3-9adb-6cb206991e46" name="Default Changelist" comment="Modified test files and restructured some code">
+      <change afterPath="$PROJECT_DIR$/Sample_Output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testDirections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testSimulation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/simulateRobot/model/ToyBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/simulateRobot/model/ToyBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/simulation_Tests/testDirections.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/simulation_Tests/testPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/simulation_Tests/testSimulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,30 +54,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="10" />
-          <entry key="java" value="8823" />
+          <entry key="dummy" value="13" />
+          <entry key="java" value="10086" />
           <entry key="name" value="3" />
-          <entry key="txt" value="329" />
-          <entry key="xml" value="295" />
+          <entry key="txt" value="569" />
+          <entry key="xml" value="318" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8823" />
-          <entry key="PLAIN_TEXT" value="342" />
-          <entry key="XML" value="295" />
+          <entry key="JAVA" value="10086" />
+          <entry key="PLAIN_TEXT" value="585" />
+          <entry key="XML" value="318" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="17" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="24" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="17" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="24" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -77,104 +89,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/simulation_Tests/testPosition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/simulation_Tests/testSimulation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1057">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/simulation_Tests/testDirections.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/Simulation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-680">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testDirections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <state relative-caret-position="80">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/ToyBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -217,18 +166,24 @@
         <option value="$PROJECT_DIR$/src/main/java/Toy_Robot_Simulation/model/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/Toy_Robot_Simulation/Simulation.java" />
         <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java" />
-        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/ToyBoard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/Simulation.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/testSimulation.java" />
         <option value="$PROJECT_DIR$/src/test/java/simulation_Tests/testSimulation.java" />
         <option value="$PROJECT_DIR$/src/test/java/simulation_Tests/testDirections.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/simulation_Tests/testPosition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testRobot.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testPosition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testSimulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/Simulation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/Commands.java" />
+        <option value="$PROJECT_DIR$/src/main/java/simulateRobot/model/ToyBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/simulateRobot/Main.java" />
+        <option value="$PROJECT_DIR$/Sample_Output.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testDirections.java" />
       </list>
     </option>
   </component>
@@ -240,9 +195,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -314,6 +269,15 @@
               <item name="ToyTobot" type="b2602c69:ProjectViewProjectNode" />
               <item name="ToyRobot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="simulateRobot" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyTobot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyRobot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,7 +293,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="simulation_Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="ToyRobot_Test_Suite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,12 +305,122 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programs/ToyRobot/src/main/java/Toy_Robot_Simulation/model/Direction.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534320202727" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534355823604" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/toy-robot-simulator-java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -360,16 +434,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Programs/ToyRobot/testng.xml">
-    <configuration name="simulation_Tests in ToyTobot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="simulateRobot.Main" />
       <module name="ToyTobot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simulation_Tests.*" />
+          <option name="PATTERN" value="simulateRobot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="simulation_Tests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ToyRobot_Test_Suite in ToyTobot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ToyTobot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ToyRobot_Test_Suite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ToyRobot_Test_Suite" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -389,48 +476,28 @@
       <module name="ToyTobot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simulation_Tests.*" />
+          <option name="PATTERN" value="ToyRobot_Test_Suite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="simulation_Tests" />
-      <option name="MAIN_CLASS_NAME" value="simulation_Tests.testDirections" />
+      <option name="MAIN_CLASS_NAME" value="ToyRobot_Test_Suite.testDirections" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testDirections.testRobotDirection" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testRobot" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ToyTobot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simulation_Tests.*" />
+          <option name="PATTERN" value="ToyRobot_Test_Suite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="simulation_Tests" />
-      <option name="MAIN_CLASS_NAME" value="simulation_Tests.testDirections" />
-      <option name="METHOD_NAME" value="testRobotDirection" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testSimulation.testRobotMoves" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ToyTobot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="simulation_Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="simulation_Tests" />
-      <option name="MAIN_CLASS_NAME" value="simulation_Tests.testSimulation" />
-      <option name="METHOD_NAME" value="testRobotMoves" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="ToyRobot_Test_Suite" />
+      <option name="MAIN_CLASS_NAME" value="ToyRobot_Test_Suite.testRobot" />
       <properties />
       <listeners />
       <method v="2">
@@ -441,7 +508,7 @@
       <module name="ToyTobot" />
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="simulation_Tests" />
-      <option name="MAIN_CLASS_NAME" value="simulation_Tests.testSimulation" />
+      <option name="MAIN_CLASS_NAME" value="ToyRobot_Test_Suite.testSimulation" />
       <option name="GROUP_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
@@ -457,19 +524,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.testSuite" />
-      <item itemvalue="JUnit.simulation_Tests in ToyTobot" />
-      <item itemvalue="TestNG.testSimulation.testRobotMoves" />
-      <item itemvalue="TestNG.testDirections.testRobotDirection" />
+      <item itemvalue="JUnit.ToyRobot_Test_Suite in ToyTobot" />
       <item itemvalue="TestNG.testDirections" />
       <item itemvalue="TestNG.D:/Programs/ToyRobot/testng.xml" />
+      <item itemvalue="TestNG.testRobot" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.D:/Programs/ToyRobot/testng.xml" />
-        <item itemvalue="JUnit.simulation_Tests in ToyTobot" />
+        <item itemvalue="TestNG.testRobot" />
+        <item itemvalue="JUnit.ToyRobot_Test_Suite in ToyTobot" />
         <item itemvalue="TestNG.testDirections" />
-        <item itemvalue="TestNG.testDirections.testRobotDirection" />
-        <item itemvalue="TestNG.testSimulation.testRobotMoves" />
       </list>
     </recent_temporary>
   </component>
@@ -533,38 +600,45 @@
       <option name="project" value="LOCAL" />
       <updated>1534273143692</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added test suite to compile test cases together">
+      <created>1534320249180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1534320249180</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testDirections - 2018.08.15 at 00h 29m 49s.xml">
-      <configuration name="testDirections" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="simulation_Tests_in_ToyTobot - 2018.08.15 at 00h 30m 03s.xml">
-      <configuration name="simulation_Tests in ToyTobot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 48m 00s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 33m 03s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 50m 12s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 34m 01s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 50m 40s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 34m 24s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 56m 29s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 34m 41s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 57m 26s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 40m 54s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 59m 20s.xml">
+    <history-entry file="testRobot - 2018.08.15 at 09h 44m 20s.xml">
+      <configuration name="testRobot" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 44m 40s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 00h 59m 50s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 46m 46s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 01h 00m 52s.xml">
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 47m 04s.xml">
+      <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__Programs_ToyRobot_testng_xml - 2018.08.15 at 09h 51m 26s.xml">
       <configuration name="D:/Programs/ToyRobot/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -588,13 +662,13 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25973153" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.3787234" />
+      <window_info active="true" anchor="bottom" id="Messages" order="0" visible="true" weight="0.3787234" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.42411348" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3460993" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.9673759" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -619,17 +693,63 @@
     <MESSAGE value="Added enum directions which will help to calculate robot moves" />
     <MESSAGE value="Implemented interface methods and modified Game.java to implement Robot movements" />
     <MESSAGE value="Refactored some code and added maven build functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored some code and added maven build functionality" />
+    <MESSAGE value="Added test suite to compile test cases together" />
+    <MESSAGE value="Modified test files and restructured some code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified test files and restructured some code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Game.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Toy_Robot_Simulation/Gamer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Toy_Robot_Simulation/exceptions/RobotExceptions.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Toy_Robot_Simulation/model/ToySurface.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Commands.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testng.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#147#148#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testRobot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testPosition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testSimulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="91" selection-start-line="33" selection-start-column="91" selection-end-line="33" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -640,95 +760,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Robot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="280">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/ToyBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        <state relative-caret-position="340">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="2160">
+          <caret line="108" column="35" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Direction.java">
+    <entry file="file://$PROJECT_DIR$/Sample_Output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testng.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/simulation_Tests/testSimulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1057">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/simulation_Tests/testDirections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/simulation_Tests/testPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="500">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="80">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Commands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/simulateRobot/model/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ToyRobot_Test_Suite/testDirections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

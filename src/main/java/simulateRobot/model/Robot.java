@@ -7,6 +7,9 @@ public class Robot {
     public Robot() {
     }
 
+    public Robot(Position position){
+        this.position = position;
+    }
 
 
     public boolean setPosition(Position position) {
@@ -17,9 +20,14 @@ public class Robot {
         return true;
     }
 
+    public boolean move() throws Exception{
+
+        return move(position.getNextPosition());
+    }
+
 
     /**
-     * Moves the robot forward in current direction
+     * Moves the robot one place forward in current direction
      *
      * @return true if moved successfully
      */
